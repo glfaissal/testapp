@@ -4,6 +4,11 @@ machine:
 dependencies:
   override:
     - pip install pytest
+deployment:
+  dockerhub:
+    branch: master
+    commands:
+      - $DOCKER_HUB_TRIGGER
 test:
   override:
     - pytest
