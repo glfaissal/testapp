@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     #redis.incr('hits')
-    return "Yesss"
+    return "Yes sir we are coming !"
 
     # return 'Hello World! I have been seen %s time.' % redis.get('hits')
 
